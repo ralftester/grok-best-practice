@@ -1,14 +1,16 @@
 # Contributing
 
-English `README.md` is the homepage. Polish `README.pl.md` uses the same section order. Product names stay English.
+English `README.md` is the homepage. Polish `README.pl.md` is the **same course and the same sections**, not a condensed abridgement. Product names stay English.
+
+`AGENTS.md` is the harness-agnostic contract. `CLAUDE.md` is an alias — do not fork instructions there.
 
 ## We merge if
 
 1. It is about **Grok Build** (`grok` CLI from xAI), or a **pack this loadout actually runs** (design, marketing, Higgsfield, Notion). Not Grok Bot chat, not grok.com.
-2. The link resolves. Packs are pointed at with `npx skills add` / `grok plugin install` — do not vendor their trees here.
+2. The link resolves. Packs are pointed at with `npx skills add` / `grok plugin install` — do not vendor their trees into `skills/`.
 3. Claims are sourced (docs.x.ai, upstream README, or a dated GitHub API snapshot).
 4. You did not invent star counts.
-5. Skills use `name` + `description`. No `GROK.md` factories.
+5. Skills use `name` + `description`. Canonical path is `skills/<name>/SKILL.md`. No `GROK.md` factories.
 
 ## Format
 
@@ -36,4 +38,4 @@ grok plugin install superpowers@xai-official --trust
 
 ## Polish
 
-Fix PL in the same PR as the English change, or say `README.pl.md` lags.
+Fix PL in the same PR as the English change (same headings, same tables), or say `README.pl.md` lags.

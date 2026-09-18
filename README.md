@@ -61,6 +61,8 @@ Do not install the full Meng To or TypeUI 67-skill trees unless you named one st
 
 - [Daily loadout](#daily-loadout)
 - [Concepts](#concepts)
+- [skills/](skills/README.md) (canonical SKILL.md)
+- [Routing eval](examples/eval-routing.md)
 - [Grok Build vs Claude Code vs Cursor](#grok-build-vs-claude-code-vs-cursor)
 - [Workflows](#workflows)
 - [Community](#community)
@@ -72,8 +74,8 @@ Do not install the full Meng To or TypeUI 67-skill trees unless you named one st
 
 | Feature | Location | Notes |
 |---------|----------|--------|
-| Instructions | `AGENTS.md`, `.grok/rules/` | Also loads `CLAUDE.md` as compat. Deeper path wins. |
-| Skills | `.grok/skills/<name>/SKILL.md`, `~/.grok/skills/` | [best-practice/grok-skills.md](best-practice/grok-skills.md) |
+| Instructions | `AGENTS.md` | Harness-agnostic. `CLAUDE.md` is an alias. |
+| Skills | `skills/<name>/SKILL.md` | Thin links in `.grok/skills`, `.claude/skills`, `.agents/skills`. [skills/](skills/README.md) |
 | Plugins | `/marketplace`, `grok plugin install …` | [best-practice/grok-plugins.md](best-practice/grok-plugins.md) |
 | Hooks | `.grok/hooks/`, `/hooks-trust` | Fail-open. [best-practice/grok-hooks.md](best-practice/grok-hooks.md) |
 | Ignore | `.grokignore` | Plus gitignore-skipped instruction files. |
@@ -154,7 +156,8 @@ Sourced. Not “pro tips”.
 4. Headless CI: `grok -p` + `--no-auto-update`. Do not put keys on the argv. ([headless](best-practice/grok-headless.md))
 5. One playbook per week. Daily packs: [loadout](catalog/loadout.md). ECC’s 292 skills are a catalog, not a loadout.
 6. Exact on-screen text belongs in HTML/code, not `/imagine`. Native imagine is for pictures.
-7. Polish readers: [README.pl.md](README.pl.md). Product names stay English.
+7. Polish readers: [README.pl.md](README.pl.md) — same sections, not a shorter copy. Product names stay English.
+8. Routing eval (10 prompts): [examples/eval-routing.md](examples/eval-routing.md).
 
 ## Contributing
 

@@ -10,7 +10,7 @@ when-to-use: >
 
 # Daily loadout
 
-Install **packs**, do not copy trees into this repo. Then `grok inspect`.
+Install **packs**, do not copy trees into this repo. Then run `inspect-and-ship` discovery for **this** harness (Grok: `grok inspect`; Claude/Codex: list `skills/`).
 
 Full table: [catalog/loadout.md](../../catalog/loadout.md).
 
@@ -36,7 +36,7 @@ npx skills add notion
 
 ## After install
 
-1. `grok inspect` — confirm names, collisions, MCP (Notion, Higgsfield).
+1. Discovery from `inspect-and-ship` — confirm names, collisions, MCP (Notion, Higgsfield).
 2. Spawn one agent: `design` · `marketing` · `higgsfield` · `notion`.
 3. If `npx skills` ran inside an agent and only wrote `.agents/skills/`,
    pass `-a` for the host (Grok still scans `.agents/skills/` and `.claude/skills/`).

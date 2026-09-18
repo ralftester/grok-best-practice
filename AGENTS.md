@@ -1,36 +1,39 @@
 # AGENTS.md
 
-Unofficial playbook. Grok Build CLI (`grok`), not Grok Bot, not grok.com chat.
+Contract for every coding agent in this repo (Grok Build, Claude Code, Codex, Cursor).
 
-English `README.md` is the homepage. Polish is `README.pl.md` — same section order.
+Unofficial playbook. In scope: xAI Grok Build CLI (`grok`). **Not** Grok Bot, **not** grok.com chat.
 
-## First session
+English `README.md` is the homepage. Polish `README.pl.md` is the same course and the same sections — not a shorter translation.
 
-1. `grok inspect` (or `grok inspect --json`).
-2. Skill `inspect-and-ship`. Do not edit yet.
-3. Install the daily loadout once (`catalog/loadout.md`). Then inspect again.
-4. Spawn **one** specialist: `design` · `marketing` · `higgsfield` · `notion`.
+`CLAUDE.md` is an alias of this file. Do not fork rules there.
 
-Do not dump 292 skills into `.grok/`. Packs install with `npx skills add`. This repo only ships routers + agents.
+## Discovery
 
-## Specialists (`.grok/agents/`)
-
-| Agent | When |
+| You are | First move |
 |---|---|
-| `design` | UI, landing, polish, anti-slop |
-| `marketing` | Copy, CRO, SEO, social, launch |
-| `higgsfield` | Image/video/ads via Higgsfield CLI or MCP |
-| `notion` | Pages, skills library, Notion MCP |
+| Grok Build | `grok inspect` (add `--json` if you need a dump) |
+| Claude Code | Read this file. List `skills/` and `.claude/skills/` |
+| Codex | Read this file. List `skills/` and `.agents/skills/` |
+| Cursor / other | Read this file. List `skills/` |
 
-Parent stays orchestrator. One specialist per job unless two domains are truly separate.
+Then skill `inspect-and-ship`. Do not edit yet.
+
+Canonical skills live in `skills/`. `.grok/skills`, `.claude/skills`, and `.agents/skills` are thin links to that folder.
+
+## Loadout
+
+Install packs with `npx skills add`. Table: `catalog/loadout.md`. Do not dump 292 skills into the project.
+
+Spawn **one** specialist per job: `design` · `marketing` · `higgsfield` · `notion` (`.grok/agents/`). Parent stays orchestrator.
 
 ## Notion
 
-Prefer Notion MCP for workspace pages. Author skills as Notion pages, then `npx skills add <notion-url>` or `npx skills add notion` so every agent loads the same SKILL.md. That loop is the point: Notion is the shared library, Grok (and Claude/Codex) are the runners.
+Prefer Notion MCP for workspace pages. Author a skill as a Notion page, then `npx skills add <notion-url>` or `npx skills add notion`. Notion is the shared library; this repo’s agents are runners.
 
 ## Hard rules
 
-- `allowed-tools` in SKILL.md does **not** restrict tools here. Real gates: permissions, sandbox, `/hooks-trust`. Hooks fail-open.
-- Plan Mode does not block bash.
 - Live Shields for stars. Never invent counts.
-- No generated YAML agents, no LifeJiggy `GROK.md`, no secrets, no `.grok/sessions/`.
+- No generated YAML agents, no LifeJiggy `GROK.md`, no secrets, no session dumps.
+- **Grok Build:** `allowed-tools` in SKILL.md does not restrict tools. Hooks fail-open (`/hooks-trust`). Plan Mode gates file edits on the plan, not bash.
+- **Claude Code:** `allowed-tools` is enforced. Do not assume Grok semantics.

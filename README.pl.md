@@ -61,6 +61,8 @@ Nie instaluj całego drzewa Meng To ani 67 skilli TypeUI, chyba że nazwałeś j
 
 - [Daily loadout](#daily-loadout)
 - [Koncepcje](#koncepcje)
+- [skills/](skills/README.md) (kanoniczny SKILL.md)
+- [Eval routingu](examples/eval-routing.md)
 - [Grok Build vs Claude Code vs Cursor](#grok-build-vs-claude-code-vs-cursor)
 - [Workflowy](#workflowy)
 - [Community](#community)
@@ -72,8 +74,8 @@ Nie instaluj całego drzewa Meng To ani 67 skilli TypeUI, chyba że nazwałeś j
 
 | Funkcja | Lokalizacja | Uwagi |
 |---------|-------------|-------|
-| Instrukcje | `AGENTS.md`, `.grok/rules/` | Ładuje też `CLAUDE.md` jako kompat. Głębsza ścieżka wygrywa. |
-| Skille | `.grok/skills/<name>/SKILL.md`, `~/.grok/skills/` | [best-practice/grok-skills.md](best-practice/grok-skills.md) |
+| Instrukcje | `AGENTS.md` | Ten sam kontrakt na każdym harnessie. `CLAUDE.md` to alias. |
+| Skille | `skills/<name>/SKILL.md` | Cienkie linki w `.grok/skills`, `.claude/skills`, `.agents/skills`. [skills/](skills/README.md) |
 | Wtyczki | `/marketplace`, `grok plugin install …` | [best-practice/grok-plugins.md](best-practice/grok-plugins.md) |
 | Hooki | `.grok/hooks/`, `/hooks-trust` | Fail-open. [best-practice/grok-hooks.md](best-practice/grok-hooks.md) |
 | Ignore | `.grokignore` | Plus pliki instrukcji pominięte przez gitignore. |
@@ -154,7 +156,8 @@ Ze źródła. Nie „pro tipy”.
 4. Headless CI: `grok -p` + `--no-auto-update`. Kluczy nie dawaj na argv. ([headless](best-practice/grok-headless.md))
 5. Jeden playbook na tydzień. Dzienne paczki: [loadout](catalog/loadout.md). 292 skille ECC to katalog, nie loadout.
 6. Dokładny tekst na ekranie rób w HTML/kodzie, nie w `/imagine`. Native imagine jest do obrazków.
-7. Nazwy produktów zostają po angielsku. Druga wersja: [README.md](README.md).
+7. Nazwy produktów zostają po angielsku. PL ma te same sekcje co EN, to nie skrót. Druga wersja: [README.md](README.md).
+8. Eval routingu (10 promptów): [examples/eval-routing.md](examples/eval-routing.md).
 
 ## Contributing
 

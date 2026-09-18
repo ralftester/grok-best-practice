@@ -1,3 +1,3 @@
 # CLAUDE.md
 
-Read [AGENTS.md](AGENTS.md). Same contract.
+Alias of [AGENTS.md](AGENTS.md). Same contract. Do not duplicate or fork instructions here.

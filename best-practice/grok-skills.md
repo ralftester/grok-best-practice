@@ -25,6 +25,6 @@ npx skills add pbakaus/impeccable
 npx skills add notion
 ```
 
-This repo’s own skills live in `skills/` and are linked into `.grok/skills/` so Grok, Claude, and Codex can all see them.
+This repo’s own skills live in `skills/` (see [skills/README.md](../skills/README.md)) and are linked into `.grok/skills/`, `.claude/skills/`, and `.agents/skills/`. Packs stay pointers in [catalog/loadout.md](../catalog/loadout.md).
 
 Sources: [Skills, plugins, marketplaces](https://docs.x.ai/build/features/skills-plugins-marketplaces), [xai-org/grok-build](https://github.com/xai-org/grok-build).
