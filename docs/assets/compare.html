@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@500&display=swap");
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1280px; height: 280px; overflow: hidden; background: #070b12; }
+  .c {
+    width: 1280px; height: 280px; background: #070b12; color: #e8eef7;
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; padding: 22px 28px 28px;
+  }
+  .col {
+    border: 1px solid #223049; border-radius: 16px; padding: 18px 20px;
+    background: #0c121c;
+  }
+  .col.hi { border-color: #1d9bf0; box-shadow: 0 0 0 1px rgba(29,155,240,0.25); }
+  .name { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 13px;
+    letter-spacing: 0.12em; text-transform: uppercase; color: #1d9bf0; margin-bottom: 8px; }
+  .col:not(.hi) .name { color: #8b9bb0; }
+  h2 { font-size: 26px; font-weight: 700; margin-bottom: 10px; }
+  ul { list-style: none; color: #c5d0de; font-size: 16px; line-height: 1.45; }
+  li { padding-left: 14px; position: relative; margin: 2px 0; }
+  li::before { content: "·"; position: absolute; left: 0; color: #1d9bf0; }
+  .foot { position: absolute; display: none; }
+</style>
+</head>
+<body>
+  <div class="c">
+    <div class="col hi">
+      <div class="name" data-hero>This playbook</div>
+      <h2>Grok Build</h2>
+      <ul>
+        <li>inspect, ACP, open harness</li>
+        <li>BYO model, native imagine</li>
+        <li>allowed-tools is not a gate</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="name">Peer</div>
+      <h2>Claude Code</h2>
+      <ul>
+        <li>biggest skill marketplace</li>
+        <li>allowed-tools enforced</li>
+        <li>no grok inspect dump</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="name">Peer</div>
+      <h2>Cursor</h2>
+      <ul>
+        <li>agent lives in the editor</li>
+        <li>Grok Bot = other product</li>
+        <li>cloud VMs, not this CLI</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

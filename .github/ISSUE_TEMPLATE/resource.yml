@@ -1,0 +1,37 @@
+name: Catalog entry
+description: Add a Grok Build repo, skill, or plugin to the map
+title: "[Add]: "
+labels: ["catalog"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: URL
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - Official
+        - Skill / plugin
+        - Workflow playbook
+        - UI / ACP host
+        - Unofficial (label it)
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it belongs
+      description: One paragraph. Must talk to official grok, not Grok Bot.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: This is Grok Build CLI, not Grok Bot, not grok.com chat
+        - label: I did not invent a star count

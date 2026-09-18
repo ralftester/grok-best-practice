@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@500&display=swap");
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1280px; height: 640px; overflow: hidden; background: #070b12; }
+  .c {
+    width: 1280px; height: 640px; position: relative;
+    background:
+      radial-gradient(900px 420px at 85% 10%, rgba(29,155,240,0.22), transparent 55%),
+      radial-gradient(700px 380px at 5% 90%, rgba(88,101,242,0.12), transparent 50%),
+      #070b12;
+    color: #e8eef7;
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    padding: 72px 80px;
+  }
+  .kicker {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 18px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: #1d9bf0; margin-bottom: 22px;
+  }
+  h1 { font-size: 72px; line-height: 1.05; font-weight: 700; letter-spacing: -0.03em; }
+  h1 span { color: #1d9bf0; }
+  .sub { margin-top: 22px; font-size: 28px; font-weight: 400; color: #b7c3d4; max-width: 920px; }
+  .row { position: absolute; bottom: 56px; left: 80px; right: 80px;
+    display: flex; justify-content: space-between; align-items: center; }
+  .pills { display: flex; gap: 12px; }
+  .pill {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 16px; padding: 8px 16px; border: 1px solid #2a3a52; border-radius: 999px;
+    color: #9aa8bd;
+  }
+  .pill.on { background: #1d9bf0; color: #071018; border-color: #1d9bf0; font-weight: 600; }
+  .note { font-size: 16px; color: #6f7d90; }
+</style>
+</head>
+<body>
+  <div class="c">
+    <div class="kicker" data-hero>GROK BUILD PLAYBOOK</div>
+    <h1>grok-<span>best</span>-practice</h1>
+    <p class="sub">from vibe coding to agentic engineering on the xAI CLI</p>
+    <div class="row">
+      <div class="pills">
+        <div class="pill on">EN</div>
+        <div class="pill">PL</div>
+      </div>
+      <div class="note">unofficial · not Grok Bot · not grok.com</div>
+    </div>
+  </div>
+</body>
+</html>
