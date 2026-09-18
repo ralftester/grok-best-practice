@@ -2,7 +2,7 @@
 
 What people actually install. Same `SKILL.md` files work in **Grok Build**, Claude Code, Codex, and Cursor after `npx skills add` (Grok also has `grok plugin install` for Superpowers).
 
-We do **not** vendor the trees. Stars are live Shields. Situations in plain language: [docs/when-to-use.md](../docs/when-to-use.md) · [docs/kiedy-czego-uzyc.md](../docs/kiedy-czego-uzyc.md).
+We do **not** vendor the trees. Stars are live Shields. Human docs: [docs/README.md](../docs/README.md).
 
 Daily subset: [loadout.md](loadout.md).
 

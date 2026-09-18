@@ -26,8 +26,9 @@
 
 Skill to krótka instrukcja, którą agent otwiera, gdy robota do niej pasuje. Instalujesz **paczki** (`npx skills add …`). Nie wrzucasz setek folderów do gita.
 
-- Na ludzki język: [docs/kiedy-czego-uzyc.md](docs/kiedy-czego-uzyc.md)
-- English map: [docs/when-to-use.md](docs/when-to-use.md)
+- Wszystkie opisy dla ludzi: [docs/](docs/README.md)
+- Na ludzki język: [kiedy czego użyć](docs/kiedy-czego-uzyc.md) · [przepisy](docs/przepisy.md) · [gdy nie gra](docs/gdy-nie-gra.md) · [słownik](docs/slownik.md)
+- English: [docs/when-to-use.md](docs/when-to-use.md)
 - Pełna lista paczek (Grok i inne agenty): [catalog/library.md](catalog/library.md)
 
 Pierwsza wiadomość w TUI: `Use inspect-and-ship. Do not edit yet.` Potem jeden specjalista: `design` · `marketing` · `higgsfield` · `notion`.
@@ -71,7 +72,10 @@ Nie instaluj całego drzewa Meng To ani 67 skilli TypeUI, chyba że nazwałeś j
 
 - [Jeśli jesteś nowy](#jeśli-jesteś-nowy)
 - [Daily loadout](#daily-loadout)
+- [Opisy dla ludzi](docs/README.md)
 - [Kiedy czego użyć](docs/kiedy-czego-uzyc.md)
+- [Przepisy](docs/przepisy.md)
+- [Gdy coś nie gra](docs/gdy-nie-gra.md)
 - [Biblioteka skilli](catalog/library.md)
 - [Koncepcje](#koncepcje)
 - [skills/](skills/README.md) (kanoniczny SKILL.md)

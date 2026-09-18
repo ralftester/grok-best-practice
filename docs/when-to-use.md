@@ -2,6 +2,8 @@
 
 Plain map. You do not need to know Claude, Codex, or Grok internals.
 
+Also: [glossary](glossary.md) · [recipes](recipes.md) · [help](help.md) · [index](README.md)
+
 A **skill** is a short instruction file (`SKILL.md`) the agent reads when the job matches. A **pack** is a bunch of skills you install with one command. An **agent** in this repo is a specialist (`design`, `marketing`, `higgsfield`, `notion`).
 
 Install packs. Do not copy 200 folders into this git repo. After install, Grok, Claude, and Codex can all see the same files.

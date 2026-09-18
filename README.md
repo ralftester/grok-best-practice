@@ -26,8 +26,9 @@ A living course and ecosystem map for xAI’s terminal coding agent. Skills, plu
 
 A skill is a short instruction the agent opens when the job matches. You install **packs** (`npx skills add …`). You do not copy hundreds of folders into git.
 
-- Plain map (English): [docs/when-to-use.md](docs/when-to-use.md)
-- Po polsku, na ludzki język: [docs/kiedy-czego-uzyc.md](docs/kiedy-czego-uzyc.md)
+- All human docs: [docs/](docs/README.md)
+- Plain map (English): [docs/when-to-use.md](docs/when-to-use.md) · [recipes](docs/recipes.md) · [help](docs/help.md)
+- Po polsku: [docs/kiedy-czego-uzyc.md](docs/kiedy-czego-uzyc.md) · [przepisy](docs/przepisy.md) · [gdy nie gra](docs/gdy-nie-gra.md)
 - Full pack list (Grok + other agents): [catalog/library.md](catalog/library.md)
 
 First message in the TUI: `Use inspect-and-ship. Do not edit yet.` Then one specialist: `design` · `marketing` · `higgsfield` · `notion`.
@@ -71,7 +72,10 @@ Do not install the full Meng To or TypeUI 67-skill trees unless you named one st
 
 - [If you are new](#if-you-are-new)
 - [Daily loadout](#daily-loadout)
+- [Human docs](docs/README.md)
 - [When to use what](docs/when-to-use.md)
+- [Recipes](docs/recipes.md)
+- [Help](docs/help.md)
 - [Skill library](catalog/library.md)
 - [Concepts](#concepts)
 - [skills/](skills/README.md) (canonical SKILL.md)

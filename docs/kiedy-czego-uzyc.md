@@ -2,6 +2,8 @@
 
 Na ludzki język. Nie musisz znać Claude’a, Codexu ani wnętrzności Groka.
 
+Dalej: [słownik](slownik.md) · [przepisy](przepisy.md) · [gdy coś nie gra](gdy-nie-gra.md) · [indeks](README.md)
+
 **Skill** to krótka instrukcja (`SKILL.md`), którą agent czyta, gdy robota do niej pasuje. **Paczka** to zestaw takich instrukcji — instalujesz jedną komendą. **Agent** w tym repo to specjalista: `design`, `marketing`, `higgsfield`, `notion`.
 
 Instalujesz paczki. Nie kopiujesz dwustu folderów do gita. Potem ten sam plik widzi Grok, Claude i Codex.
