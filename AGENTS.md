@@ -1,26 +1,36 @@
 # AGENTS.md
 
-Playbook for xAI Grok Build. Unofficial. Not Grok Bot, not grok.com chat.
+Unofficial playbook. Grok Build CLI (`grok`), not Grok Bot, not grok.com chat.
 
-## What this repo is
+English `README.md` is the homepage. Polish is `README.pl.md` — same section order.
 
-A living course plus ecosystem map. English `README.md` is the homepage.
-Polish is `README.pl.md`. Do not 1:1-translate every table.
+## First session
 
-## How to work here
+1. `grok inspect` (or `grok inspect --json`).
+2. Skill `inspect-and-ship`. Do not edit yet.
+3. Install the daily loadout once (`catalog/loadout.md`). Then inspect again.
+4. Spawn **one** specialist: `design` · `marketing` · `higgsfield` · `notion`.
 
-1. Run `grok inspect` before inventing paths.
-2. Skills live in `.grok/skills/<name>/SKILL.md` with `name` and `description`.
-3. `allowed-tools` in a skill does **not** restrict tools on Grok Build.
-4. Plan Mode does not block bash. Hooks fail-open.
-5. Do not add generated YAML agents, line-count theatre, or Claude mascots.
-6. Star counts in tables: live Shields, or a dated GitHub API snapshot. Never invent numbers.
-7. Keep claims sourced (docs.x.ai or xai-org/grok-build).
+Do not dump 292 skills into `.grok/`. Packs install with `npx skills add`. This repo only ships routers + agents.
 
-## Do not confuse
+## Specialists (`.grok/agents/`)
 
-| Product | This repo |
+| Agent | When |
 |---|---|
-| Grok Build CLI (`grok`) | Yes |
-| Grok Bot (cloud computer) | Pointers only |
-| superagent-ai/grok-cli | Label unofficial |
+| `design` | UI, landing, polish, anti-slop |
+| `marketing` | Copy, CRO, SEO, social, launch |
+| `higgsfield` | Image/video/ads via Higgsfield CLI or MCP |
+| `notion` | Pages, skills library, Notion MCP |
+
+Parent stays orchestrator. One specialist per job unless two domains are truly separate.
+
+## Notion
+
+Prefer Notion MCP for workspace pages. Author skills as Notion pages, then `npx skills add <notion-url>` or `npx skills add notion` so every agent loads the same SKILL.md. That loop is the point: Notion is the shared library, Grok (and Claude/Codex) are the runners.
+
+## Hard rules
+
+- `allowed-tools` in SKILL.md does **not** restrict tools here. Real gates: permissions, sandbox, `/hooks-trust`. Hooks fail-open.
+- Plan Mode does not block bash.
+- Live Shields for stars. Never invent counts.
+- No generated YAML agents, no LifeJiggy `GROK.md`, no secrets, no `.grok/sessions/`.

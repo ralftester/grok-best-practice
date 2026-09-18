@@ -31,15 +31,35 @@ curl -fsSL https://x.ai/cli/install.sh | bash   # macOS / Linux
 cd your-project
 grok inspect
 grok plugin install superpowers@xai-official --trust
+# dzienne paczki: design, marketing, Higgsfield, Notion — catalog/loadout.md
 grok
 ```
 
 W TUI: `Use inspect-and-ship. Do not edit yet.`
 
-Czytaj to jak kurs. Jedna paczka na raz. Nie wsypuj 292 skilli do `.grok/`.
+Czytaj to jak kurs. Instaluj **paczki**, nie 292 pliki. Jeden specjalista: `design` · `marketing` · `higgsfield` · `notion`.
+
+## Daily loadout
+
+Komendy: [catalog/loadout.md](catalog/loadout.md) · [examples/loadout.md](examples/loadout.md)
+
+| Robota | Paczka | Install |
+|---|---|---|
+| UI polish | [impeccable](https://github.com/pbakaus/impeccable) | `npx skills add pbakaus/impeccable` |
+| UI intelligence | [ui-ux-pro-max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | `npx skills add nextlevelbuilder/ui-ux-pro-max-skill` |
+| Marketing | [marketingskills](https://github.com/coreyhaines31/marketingskills) | `npx skills add coreyhaines31/marketingskills` |
+| Obraz / wideo / ads | [higgsfield-ai/skills](https://github.com/higgsfield-ai/skills) | `npx skills add higgsfield-ai/skills` |
+| Biblioteka Notion | [Skills API](https://developers.notion.com/guides/agent-skills/overview) | `npx skills add notion` |
+
+Notion MCP (`https://mcp.notion.com/mcp`) plus `npx skills add notion`: skill piszesz w Notion, odpalasz w Grok.
+
+Agenci: [design](.grok/agents/design.md) · [marketing](.grok/agents/marketing.md) · [higgsfield](.grok/agents/higgsfield.md) · [notion](.grok/agents/notion.md).
+
+Nie instaluj całego drzewa Meng To ani 67 skilli TypeUI, chyba że nazwałeś jeden styl.
 
 ## Spis treści
 
+- [Daily loadout](#daily-loadout)
 - [Koncepcje](#koncepcje)
 - [Grok Build vs Claude Code vs Cursor](#grok-build-vs-claude-code-vs-cursor)
 - [Workflowy](#workflowy)
@@ -59,12 +79,12 @@ Czytaj to jak kurs. Jedna paczka na raz. Nie wsypuj 292 skilli do `.grok/`.
 | Ignore | `.grokignore` | Plus pliki instrukcji pominięte przez gitignore. |
 | Inspect | `grok inspect` / `--json` | [best-practice/grok-inspect.md](best-practice/grok-inspect.md) |
 | Plan Mode | `/plan`, Shift+Tab | Brama na edycję plików. Bash nie jest zablokowany. [plan](best-practice/grok-plan-mode.md) |
-| Subagenty | `.grok/agents/`, worktrees | [best-practice/grok-agents.md](best-practice/grok-agents.md) |
+| Subagenty | `.grok/agents/` | `design` `marketing` `higgsfield` `notion`. [agenci](best-practice/grok-agents.md) |
 | Headless | `grok -p` | [best-practice/grok-headless.md](best-practice/grok-headless.md) |
 | ACP | `grok agent stdio` | Tu podpinają się IDE / web UI. |
-| Imagine | `/imagine`, `/imagine-video` | Native. Nie wtyczka. |
+| Imagine | `/imagine`, `/imagine-video` | Obrazki. Wideo/ads produkcyjne → Higgsfield. |
 | Memory | `/memory`, `/flush` | GA od CLI 1.0.34. |
-| Demo skill | [inspect-and-ship](.grok/skills/inspect-and-ship/SKILL.md) | Pierwsza sesja w tym repo. |
+| Demo | [inspect-and-ship](skills/inspect-and-ship/SKILL.md), [loadout](skills/loadout/SKILL.md) | Pierwsza sesja, potem paczki. |
 
 <p align="center">
   <img src="docs/assets/compare-strip.png" width="800" alt="Grok Build vs Claude Code vs Cursor" />
@@ -132,7 +152,7 @@ Ze źródła. Nie „pro tipy”.
 2. Projektowym hookom dawaj zaufanie przez `/hooks-trust`, nie przez nadzieję, że SKILL.md Cię zasandboxuje. ([hooks](best-practice/grok-hooks.md))
 3. Superpowers instaluj z marketplace xAI, potem inspect jeszcze raz. ([plugins](best-practice/grok-plugins.md))
 4. Headless CI: `grok -p` + `--no-auto-update`. Kluczy nie dawaj na argv. ([headless](best-practice/grok-headless.md))
-5. Jeden playbook na tydzień. 292 skille ECC to katalog, nie loadout. ([workflows](catalog/workflows.md))
+5. Jeden playbook na tydzień. Dzienne paczki: [loadout](catalog/loadout.md). 292 skille ECC to katalog, nie loadout.
 6. Dokładny tekst na ekranie rób w HTML/kodzie, nie w `/imagine`. Native imagine jest do obrazków.
 7. Nazwy produktów zostają po angielsku. Druga wersja: [README.md](README.md).
 

@@ -13,5 +13,10 @@ Same Shan-style map, Grok install column. Stars are live Shields, not a hardcode
 | [gstack](https://github.com/garrytan/gstack) | [![★](https://img.shields.io/github/stars/garrytan/gstack)](https://github.com/garrytan/gstack) | `./setup --host` if documented | Claude-first roles. |
 | [OpenSpec](https://github.com/Fission-AI/OpenSpec) | [![★](https://img.shields.io/github/stars/Fission-AI/OpenSpec)](https://github.com/Fission-AI/OpenSpec) | CLI `/opsx:*` | Spec change control. |
 | [claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) | [![★](https://img.shields.io/github/stars/shanraisshan/claude-code-best-practice)](https://github.com/shanraisshan/claude-code-best-practice) | Read as a course | Shape we borrowed. Product is Claude. |
+| [higgsfield-ai/skills](https://github.com/higgsfield-ai/skills) | [![★](https://img.shields.io/github/stars/higgsfield-ai/skills)](https://github.com/higgsfield-ai/skills) | `npx skills add higgsfield-ai/skills` | Image/video/ads. Pair with MCP `mcp.higgsfield.ai`. |
+| [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | [![★](https://img.shields.io/github/stars/coreyhaines31/marketingskills)](https://github.com/coreyhaines31/marketingskills) | `npx skills add coreyhaines31/marketingskills` | Start with `product-marketing`. |
+| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | [![★](https://img.shields.io/github/stars/pbakaus/impeccable)](https://github.com/pbakaus/impeccable) | `npx skills add pbakaus/impeccable` | UI polish/audit. |
+| [ui-ux-pro-max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | [![★](https://img.shields.io/github/stars/nextlevelbuilder/ui-ux-pro-max-skill)](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | `npx skills add nextlevelbuilder/ui-ux-pro-max-skill` | Design intelligence DB. |
+| Notion skills | — | `npx skills add notion` | Workspace library + MCP. See [loadout](loadout.md). |
 
 Yellow in those upstream tables = sub-loops. We do not copy their art.

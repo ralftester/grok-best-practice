@@ -15,11 +15,16 @@ Frontmatter Grok actually uses: `name`, `description`, `when-to-use`, `paths`, `
 
 Create with `/create-skill` (user guide). Some landing copy still says `/skillify`. Same idea, two names.
 
-Install someone else’s pack only when they document a Grok path:
+Install someone else’s pack only when they document a Grok path. Daily set: [catalog/loadout.md](../catalog/loadout.md).
 
 ```bash
 grok plugin install superpowers@xai-official --trust
-npx skills add mattpocock/skills
+npx skills add higgsfield-ai/skills
+npx skills add coreyhaines31/marketingskills
+npx skills add pbakaus/impeccable
+npx skills add notion
 ```
+
+This repo’s own skills live in `skills/` and are linked into `.grok/skills/` so Grok, Claude, and Codex can all see them.
 
 Sources: [Skills, plugins, marketplaces](https://docs.x.ai/build/features/skills-plugins-marketplaces), [xai-org/grok-build](https://github.com/xai-org/grok-build).

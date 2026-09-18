@@ -31,15 +31,35 @@ curl -fsSL https://x.ai/cli/install.sh | bash   # macOS / Linux
 cd your-project
 grok inspect
 grok plugin install superpowers@xai-official --trust
+# daily packs: design, marketing, Higgsfield, Notion — see catalog/loadout.md
 grok
 ```
 
 In the TUI: `Use inspect-and-ship. Do not edit yet.`
 
-Read this repo as a course. Install one playbook at a time. Do not dump 292 skills into `.grok/`.
+Read this repo as a course. Install **packs**, not 292 files. Spawn one specialist: `design` · `marketing` · `higgsfield` · `notion`.
+
+## Daily loadout
+
+Copy-paste: [catalog/loadout.md](catalog/loadout.md) · [examples/loadout.md](examples/loadout.md)
+
+| Job | Pack | Install |
+|---|---|---|
+| UI polish | [impeccable](https://github.com/pbakaus/impeccable) | `npx skills add pbakaus/impeccable` |
+| UI intelligence | [ui-ux-pro-max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | `npx skills add nextlevelbuilder/ui-ux-pro-max-skill` |
+| Marketing | [marketingskills](https://github.com/coreyhaines31/marketingskills) | `npx skills add coreyhaines31/marketingskills` |
+| Image / video / ads | [higgsfield-ai/skills](https://github.com/higgsfield-ai/skills) | `npx skills add higgsfield-ai/skills` |
+| Notion library | [Skills API](https://developers.notion.com/guides/agent-skills/overview) | `npx skills add notion` |
+
+Notion MCP (`https://mcp.notion.com/mcp`) plus `npx skills add notion` is the intended loop: write the skill in Notion, run it in Grok.
+
+Agents in this repo: [design](.grok/agents/design.md) · [marketing](.grok/agents/marketing.md) · [higgsfield](.grok/agents/higgsfield.md) · [notion](.grok/agents/notion.md).
+
+Do not install the full Meng To or TypeUI 67-skill trees unless you named one style.
 
 ## Contents
 
+- [Daily loadout](#daily-loadout)
 - [Concepts](#concepts)
 - [Grok Build vs Claude Code vs Cursor](#grok-build-vs-claude-code-vs-cursor)
 - [Workflows](#workflows)
@@ -59,12 +79,12 @@ Read this repo as a course. Install one playbook at a time. Do not dump 292 skil
 | Ignore | `.grokignore` | Plus gitignore-skipped instruction files. |
 | Inspect | `grok inspect` / `--json` | [best-practice/grok-inspect.md](best-practice/grok-inspect.md) |
 | Plan Mode | `/plan`, Shift+Tab | File-edit gate. Bash is not blocked. [plan](best-practice/grok-plan-mode.md) |
-| Subagents | `.grok/agents/`, worktrees | [best-practice/grok-agents.md](best-practice/grok-agents.md) |
+| Subagents | `.grok/agents/` | `design` `marketing` `higgsfield` `notion`. [agents](best-practice/grok-agents.md) |
 | Headless | `grok -p` | [best-practice/grok-headless.md](best-practice/grok-headless.md) |
 | ACP | `grok agent stdio` | IDE / web UIs attach here. |
-| Imagine | `/imagine`, `/imagine-video` | Native. Not a plugin. |
+| Imagine | `/imagine`, `/imagine-video` | Pictures. Production video/ads → Higgsfield. |
 | Memory | `/memory`, `/flush` | GA as of CLI 1.0.34. |
-| Demo skill | [inspect-and-ship](.grok/skills/inspect-and-ship/SKILL.md) | First session in this repo. |
+| Demo skills | [inspect-and-ship](skills/inspect-and-ship/SKILL.md), [loadout](skills/loadout/SKILL.md) | First session, then packs. |
 
 <p align="center">
   <img src="docs/assets/compare-strip.png" width="800" alt="Grok Build vs Claude Code vs Cursor" />
@@ -132,7 +152,7 @@ Sourced. Not “pro tips”.
 2. Trust project hooks with `/hooks-trust`, not by hoping SKILL.md will sandbox you. ([hooks](best-practice/grok-hooks.md))
 3. Install Superpowers from the xAI marketplace, then inspect again. ([plugins](best-practice/grok-plugins.md))
 4. Headless CI: `grok -p` + `--no-auto-update`. Do not put keys on the argv. ([headless](best-practice/grok-headless.md))
-5. One playbook per week. ECC’s 292 skills are a catalog, not a loadout. ([workflows](catalog/workflows.md))
+5. One playbook per week. Daily packs: [loadout](catalog/loadout.md). ECC’s 292 skills are a catalog, not a loadout.
 6. Exact on-screen text belongs in HTML/code, not `/imagine`. Native imagine is for pictures.
 7. Polish readers: [README.pl.md](README.pl.md). Product names stay English.
 

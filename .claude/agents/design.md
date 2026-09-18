@@ -1,0 +1,1 @@
+../../.grok/agents/design.md

@@ -1,11 +1,20 @@
-# Subagents and worktrees
+# Subagents
 
-Built-in types: `general-purpose`, `explore` (read/search, no shell/edits), `plan` (plan, no shell/edits). Custom: `.grok/agents/` and `~/.grok/agents/`.
+Built-in types: `general-purpose`, `explore`, `plan`. Custom agents: `.grok/agents/` and `~/.grok/agents/`.
 
-Personas overlay behaviour. They are not extra capabilities.
+This playbook ships four:
 
-Worktrees: `--worktree` / `-w`, `grok clone`, hooks `WorktreeCreate` / `WorktreeRemove`. Isolation is per worktree, not per marketing slide.
+| Agent | File | Job |
+|---|---|---|
+| `design` | [design.md](../.grok/agents/design.md) | UI, polish, anti-slop |
+| `marketing` | [marketing.md](../.grok/agents/marketing.md) | Copy, CRO, SEO, launch |
+| `higgsfield` | [higgsfield.md](../.grok/agents/higgsfield.md) | Image/video/ads |
+| `notion` | [notion.md](../.grok/agents/notion.md) | Notion MCP + skills library |
 
-Workflows (`.rhai`) can fan out with a budget. `/create-workflow`, `/workflow`. Do not paste LifeJiggy YAML here. Grok will not load it.
+Spawn **one**. Parent orchestrates. Packs they expect: [catalog/loadout.md](../catalog/loadout.md).
 
-Source: [Modes and commands](https://docs.x.ai/build/modes-and-commands), bundled `create-workflow` skill.
+Personas overlay tone. They are not extra tools.
+
+Worktrees: `--worktree` / `-w`. Workflows are `.rhai`, not YAML.
+
+Source: [Modes and commands](https://docs.x.ai/build/modes-and-commands).

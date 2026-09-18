@@ -5,6 +5,7 @@ curl -fsSL https://x.ai/cli/install.sh | bash
 cd your-project
 grok inspect
 grok plugin install superpowers@xai-official --trust
+# optional: catalog/loadout.md
 grok inspect
 grok
 ```
