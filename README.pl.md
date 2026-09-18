@@ -22,6 +22,16 @@
 
 > Nieoficjalny playbook społeczności. Bez afiliacji z xAI. **Grok Build ≠ Grok Bot ≠ grok.com chat.**
 
+## Jeśli jesteś nowy
+
+Skill to krótka instrukcja, którą agent otwiera, gdy robota do niej pasuje. Instalujesz **paczki** (`npx skills add …`). Nie wrzucasz setek folderów do gita.
+
+- Na ludzki język: [docs/kiedy-czego-uzyc.md](docs/kiedy-czego-uzyc.md)
+- English map: [docs/when-to-use.md](docs/when-to-use.md)
+- Pełna lista paczek (Grok i inne agenty): [catalog/library.md](catalog/library.md)
+
+Pierwsza wiadomość w TUI: `Use inspect-and-ship. Do not edit yet.` Potem jeden specjalista: `design` · `marketing` · `higgsfield` · `notion`.
+
 ## Jak używać
 
 ```bash
@@ -41,7 +51,7 @@ Czytaj to jak kurs. Instaluj **paczki**, nie 292 pliki. Jeden specjalista: `desi
 
 ## Daily loadout
 
-Komendy: [catalog/loadout.md](catalog/loadout.md) · [examples/loadout.md](examples/loadout.md)
+Minimum na co dzień: [catalog/loadout.md](catalog/loadout.md) · [examples/loadout.md](examples/loadout.md). Szersza mapa: [catalog/library.md](catalog/library.md).
 
 | Robota | Paczka | Install |
 |---|---|---|
@@ -59,7 +69,10 @@ Nie instaluj całego drzewa Meng To ani 67 skilli TypeUI, chyba że nazwałeś j
 
 ## Spis treści
 
+- [Jeśli jesteś nowy](#jeśli-jesteś-nowy)
 - [Daily loadout](#daily-loadout)
+- [Kiedy czego użyć](docs/kiedy-czego-uzyc.md)
+- [Biblioteka skilli](catalog/library.md)
 - [Koncepcje](#koncepcje)
 - [skills/](skills/README.md) (kanoniczny SKILL.md)
 - [Eval routingu](examples/eval-routing.md)
@@ -123,6 +136,10 @@ Pełna tabela: [catalog/workflows.md](catalog/workflows.md).
 | [Spec Kit](https://github.com/github/spec-kit) | [![★](https://img.shields.io/github/stars/github/spec-kit)](https://github.com/github/spec-kit) | `uv tool install specify-cli` |
 | [anthropics/skills](https://github.com/anthropics/skills) | [![★](https://img.shields.io/github/stars/anthropics/skills)](https://github.com/anthropics/skills) | Loader kompatybilności |
 | [xai-org/grok-build](https://github.com/xai-org/grok-build) | [![★](https://img.shields.io/github/stars/xai-org/grok-build)](https://github.com/xai-org/grok-build) | Oficjalne CLI |
+| [higgsfield-ai/skills](https://github.com/higgsfield-ai/skills) | [![★](https://img.shields.io/github/stars/higgsfield-ai/skills)](https://github.com/higgsfield-ai/skills) | `npx skills add higgsfield-ai/skills` |
+| [marketingskills](https://github.com/coreyhaines31/marketingskills) | [![★](https://img.shields.io/github/stars/coreyhaines31/marketingskills)](https://github.com/coreyhaines31/marketingskills) | `npx skills add coreyhaines31/marketingskills` |
+| [impeccable](https://github.com/pbakaus/impeccable) | [![★](https://img.shields.io/github/stars/pbakaus/impeccable)](https://github.com/pbakaus/impeccable) | `npx skills add pbakaus/impeccable` |
+| [remotion-dev/skills](https://github.com/remotion-dev/skills) | [![★](https://img.shields.io/github/stars/remotion-dev/skills)](https://github.com/remotion-dev/skills) | `npx skills add remotion-dev/skills` |
 
 ## Community
 
@@ -158,6 +175,7 @@ Ze źródła. Nie „pro tipy”.
 6. Dokładny tekst na ekranie rób w HTML/kodzie, nie w `/imagine`. Native imagine jest do obrazków.
 7. Nazwy produktów zostają po angielsku. PL ma te same sekcje co EN, to nie skrót. Druga wersja: [README.md](README.md).
 8. Eval routingu (10 promptów): [examples/eval-routing.md](examples/eval-routing.md).
+9. Kiedy czego użyć, na ludzki język: [docs/kiedy-czego-uzyc.md](docs/kiedy-czego-uzyc.md). Biblioteka: [catalog/library.md](catalog/library.md).
 
 ## Contributing
 

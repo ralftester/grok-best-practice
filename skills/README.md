@@ -13,4 +13,6 @@ Thin entries (same files):
 - `.claude/skills/<name>` → here
 - `.agents/skills/<name>` → here
 
-Everything else (impeccable, marketing, Higgsfield, Notion, Superpowers) stays a **pointer** in [catalog/loadout.md](../catalog/loadout.md). Do not copy those trees into this folder.
+Everything else stays a **pointer** in [catalog/library.md](../catalog/library.md) (daily subset: [catalog/loadout.md](../catalog/loadout.md)). Do not copy those trees into this folder.
+
+When to use what, in plain language: [docs/when-to-use.md](../docs/when-to-use.md) · [docs/kiedy-czego-uzyc.md](../docs/kiedy-czego-uzyc.md).

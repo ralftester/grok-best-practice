@@ -18,5 +18,12 @@ Same Shan-style map, Grok install column. Stars are live Shields, not a hardcode
 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | [![★](https://img.shields.io/github/stars/pbakaus/impeccable)](https://github.com/pbakaus/impeccable) | `npx skills add pbakaus/impeccable` | UI polish/audit. |
 | [ui-ux-pro-max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | [![★](https://img.shields.io/github/stars/nextlevelbuilder/ui-ux-pro-max-skill)](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | `npx skills add nextlevelbuilder/ui-ux-pro-max-skill` | Design intelligence DB. |
 | Notion skills | — | `npx skills add notion` | Workspace library + MCP. See [loadout](loadout.md). |
+| [remotion-dev/skills](https://github.com/remotion-dev/skills) | [![★](https://img.shields.io/github/stars/remotion-dev/skills)](https://github.com/remotion-dev/skills) | `npx skills add remotion-dev/skills` | Video as React. Not Higgsfield. |
+| [supabase/agent-skills](https://github.com/supabase/agent-skills) | [![★](https://img.shields.io/github/stars/supabase/agent-skills)](https://github.com/supabase/agent-skills) | `npx skills add supabase/agent-skills` | Postgres. |
+| [better-auth/skills](https://github.com/better-auth/skills) | [![★](https://img.shields.io/github/stars/better-auth/skills)](https://github.com/better-auth/skills) | `npx skills add better-auth/skills` | Auth. |
+| [vercel-labs/skills](https://github.com/vercel-labs/skills) `find-skills` | [![★](https://img.shields.io/github/stars/vercel-labs/skills)](https://github.com/vercel-labs/skills) | `npx skills add vercel-labs/skills --skill find-skills` | Search [skills.sh](https://skills.sh). |
+| anthropics `pdf` `docx` `xlsx` `pptx` | [![★](https://img.shields.io/github/stars/anthropics/skills)](https://github.com/anthropics/skills) | `npx skills add anthropics/skills --skill pdf` | Office files. |
+
+Human map: [docs/when-to-use.md](../docs/when-to-use.md). Full library: [library.md](library.md).
 
 Yellow in those upstream tables = sub-loops. We do not copy their art.

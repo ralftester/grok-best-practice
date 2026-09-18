@@ -4,6 +4,8 @@ Install these packs. Stars are live Shields. Checked 2026-09-18.
 
 This repo does **not** vendor the pack bodies. Agents load them from the skill dirs `npx skills` writes.
 
+Human map: [docs/when-to-use.md](../docs/when-to-use.md) · [docs/kiedy-czego-uzyc.md](../docs/kiedy-czego-uzyc.md). Full library: [library.md](library.md).
+
 ## Install once
 
 ```bash

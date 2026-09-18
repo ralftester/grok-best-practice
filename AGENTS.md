@@ -6,6 +6,8 @@ Unofficial playbook. In scope: xAI Grok Build CLI (`grok`). **Not** Grok Bot, **
 
 English `README.md` is the homepage. Polish `README.pl.md` is the same course and the same sections — not a shorter translation.
 
+For humans (when to use which pack): `docs/when-to-use.md` and `docs/kiedy-czego-uzyc.md`. Pack list: `catalog/library.md`.
+
 `CLAUDE.md` is an alias of this file. Do not fork rules there.
 
 ## Discovery
